@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "WearableData: participant-level inference for longitudinal wearable data"
+type: software
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/shahran-alve/WearableData"
+authors:
+  - family-names: Alve
+    given-names: Shahran Rahman
+    orcid: "https://orcid.org/0009-0008-3075-3296"
+    affiliation: "The University of Texas at Dallas"
+  - family-names: Ahmed
+    given-names: Sabbir
+    affiliation: "The University of Texas at Dallas"
+  - family-names: Khan
+    given-names: Latifur
+    affiliation: "The University of Texas at Dallas"
+preferred-citation:
+  type: conference-paper
+  title: "Participant-Level Inference for Machine Learning on Large-Scale Longitudinal Wearable Data"
+  authors:
+    - family-names: Alve
+      given-names: Shahran Rahman
+      orcid: "https://orcid.org/0009-0008-3075-3296"
+    - family-names: Ahmed
+      given-names: Sabbir
+    - family-names: Khan
+      given-names: Latifur
+  collection-title: "2026 IEEE International Conference on Big Data (BigData)"
+  publisher:
+    name: IEEE
+  year: 2026

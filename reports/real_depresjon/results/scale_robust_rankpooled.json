@@ -1,0 +1,19 @@
+{
+  "workspace": "reports/real_depresjon",
+  "statistic": "participant AUROC after within-fold quantile-rank normalisation, then pooling",
+  "rationale": "invariant to any strictly monotone per-fold rescaling, so it does not assume probabilities are comparable across outer folds that may select different model families",
+  "observed_rank_pooled": 0.928,
+  "n_participants": 55,
+  "data_source": "REAL:real_depresjon",
+  "B": 110,
+  "n_ge": 0,
+  "p_value": 0.00901,
+  "p_ci": [
+    0.00901,
+    0.04169
+  ],
+  "smallest_attainable_p": 0.00901,
+  "null_mean": 0.5106,
+  "null_sd": 0.107,
+  "null_max": 0.7894
+}

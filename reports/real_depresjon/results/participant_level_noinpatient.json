@@ -1,0 +1,118 @@
+{
+  "workspace": "reports/real_depresjon",
+  "tag": "noinpatient",
+  "unit_of_analysis": "participant",
+  "aggregation_rule": "mean",
+  "primary_pipeline": {
+    "learning_rate": 0.1,
+    "max_leaf_nodes": 31,
+    "max_iter": 200
+  },
+  "n_participants": 50,
+  "n_windows": 732,
+  "windows_per_participant": {
+    "median": 11.0,
+    "min": 8,
+    "max": 39
+  },
+  "threshold_source": "inner validation participants only",
+  "participant_metrics": {
+    "seed": 0,
+    "n_participants": 50,
+    "n_positive": 18,
+    "n_negative": 32,
+    "prevalence": 0.36,
+    "auroc": 0.9271,
+    "auprc": 0.9102,
+    "auprc_baseline": 0.36,
+    "brier": 0.1052,
+    "brier_baseline_prevalence": 0.2304,
+    "log_loss": 0.3927,
+    "balanced_accuracy": 0.8455,
+    "sensitivity": 0.7222,
+    "specificity": 0.9688,
+    "macro_f1": 0.8621,
+    "threshold": 0.57,
+    "tp": 13,
+    "fp": 1,
+    "tn": 31,
+    "fn": 5
+  },
+  "seed_stability": {
+    "seeds": [
+      0
+    ],
+    "auroc_mean": 0.9271,
+    "auroc_sd": 0.0
+  },
+  "thresholded_metrics": {
+    "threshold": 0.57,
+    "point": {
+      "balanced_accuracy": 0.8455,
+      "sensitivity": 0.7222,
+      "specificity": 0.9688,
+      "ppv": 0.9286,
+      "n_true_positives_detected": 13
+    },
+    "ci_95_percentile": {
+      "balanced_accuracy": [
+        0.7344,
+        0.9444
+      ],
+      "sensitivity": [
+        0.5,
+        0.8889
+      ],
+      "specificity": [
+        0.9062,
+        1.0
+      ],
+      "ppv": [
+        0.7857,
+        1.0
+      ]
+    },
+    "interval_construction": "stratified participant bootstrap, positives and negatives resampled separately, percentile interval",
+    "caution": "the threshold is selected on very small inner-validation sets and is not stable; these intervals do not include threshold-selection variability"
+  },
+  "participant_bootstrap": {
+    "auroc": [
+      0.8485,
+      0.9864
+    ],
+    "auprc": [
+      0.7974,
+      0.9814
+    ],
+    "n_resamples": 3000,
+    "discarded_single_class_resample_rate": 0.0,
+    "role": "descriptive only; inference uses the permutation p-value"
+  },
+  "permutation_test": {
+    "test": "participant-level permutation; grouped-stratified folds regenerated from each permuted labelling; full pipeline rerun",
+    "statistic": "participant-level out-of-fold AUROC (fixed HGB pipeline)",
+    "observed": 0.9271,
+    "B_requested": 112,
+    "B_effective": 112,
+    "n_permuted_ge_observed": 0,
+    "p_value_plus_one": 0.00885,
+    "p_value_monte_carlo_ci": [
+      0.00885,
+      0.04096
+    ],
+    "smallest_attainable_p": 0.00885,
+    "null_mean": 0.4978,
+    "null_sd": 0.1054,
+    "null_quantiles": {
+      "0.025": 0.31,
+      "0.5": 0.4913,
+      "0.95": 0.664,
+      "0.975": 0.6958
+    },
+    "null_max": 0.8125,
+    "null_note": "quantiles are empirical percentiles of the permutation distribution and carry Monte Carlo error at this B; they are descriptive, and inference uses the p-value above",
+    "completed": true,
+    "stopped_on_time_budget": false
+  },
+  "data_source": "REAL:real_depresjon"
+}

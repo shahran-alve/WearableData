@@ -1,0 +1,106 @@
+{
+  "workspace": "reports/real_depresjon",
+  "paired_comparison": {
+    "matched_B": 23,
+    "note": "both statistics are computed on the same permutation ids, so the comparison is paired and free of the Monte Carlo-resolution artefact that comparing p-values at different B would introduce",
+    "delta_mean": 0.0443,
+    "delta_median": 0.038,
+    "delta_bootstrap_ci": [
+      0.0224,
+      0.0677
+    ],
+    "frac_delta_positive": 0.7826,
+    "sign_test_p": 0.01062,
+    "upper_tail": {
+      "p95_fixed": 0.6762,
+      "p95_selection": 0.7154,
+      "p95_shift": 0.0391,
+      "p99_fixed": 0.7193,
+      "p99_selection": 0.7328,
+      "max_fixed": 0.731,
+      "max_selection": 0.7364
+    },
+    "matched_p_values": {
+      "fixed": 0.04167,
+      "selection_aware": 0.04167,
+      "smallest_attainable": 0.04167
+    },
+    "caution": "a shift in the null mean is not by itself selection optimism: inner selection inside outer training folds is proper nested evaluation. Whether the upper tail moves is the quantity that affects inference, and it requires far more permutations than are currently available"
+  },
+  "fold_policy": "regenerated design: grouped-stratified folds are rebuilt from each permuted label vector with the same splitting algorithm and seed schedule, because stratification reads the labels and is therefore part of A",
+  "candidate_family": [
+    "logreg_C0.1_all",
+    "logreg_C1_all",
+    "logreg_C1_population",
+    "logreg_C1_relative",
+    "rf_leaf1",
+    "rf_leaf5",
+    "hgb_lr0.1_leaf31",
+    "hgb_lr0.03_leaf15"
+  ],
+  "n_candidates": 8,
+  "inner_selection_rule": "highest mean inner-validation participant AUROC",
+  "observed": {
+    "selected_model": "hgb_lr0.1_leaf31",
+    "T_selection_aware": 0.928,
+    "T_fixed": 0.928,
+    "T_oracle_max": 0.9334,
+    "per_candidate_outer": {
+      "logreg_C0.1_all": 0.4212,
+      "logreg_C1_all": 0.4185,
+      "logreg_C1_population": 0.837,
+      "logreg_C1_relative": 0.4212,
+      "rf_leaf1": 0.8967,
+      "rf_leaf5": 0.8899,
+      "hgb_lr0.1_leaf31": 0.928,
+      "hgb_lr0.03_leaf15": 0.9334
+    }
+  },
+  "fixed_pipeline_null": {
+    "observed": 0.928,
+    "B": 23,
+    "n_ge": 0,
+    "p_value": 0.04167,
+    "p_ci": [
+      0.04167,
+      0.18368
+    ],
+    "smallest_attainable_p": 0.04167,
+    "null_mean": 0.502,
+    "null_sd": 0.1092,
+    "null_p95": 0.6762,
+    "null_max": 0.731
+  },
+  "selection_aware_null": {
+    "observed": 0.928,
+    "B": 23,
+    "n_ge": 0,
+    "p_value": 0.04167,
+    "p_ci": [
+      0.04167,
+      0.18368
+    ],
+    "smallest_attainable_p": 0.04167,
+    "null_mean": 0.5463,
+    "null_sd": 0.1084,
+    "null_p95": 0.7154,
+    "null_max": 0.7364
+  },
+  "selection_optimism": {
+    "null_mean_shift": 0.0443,
+    "null_p95_shift": 0.0391,
+    "null_max_shift": 0.0054,
+    "reading": "a positive shift is the optimism that selecting among 8 candidates adds under the null; a fixed-pipeline null does not account for it"
+  },
+  "selected_model_frequency_under_null": {
+    "logreg_C1_population": 0.2174,
+    "hgb_lr0.03_leaf15": 0.2174,
+    "logreg_C1_relative": 0.1739,
+    "rf_leaf5": 0.087,
+    "logreg_C1_all": 0.087,
+    "hgb_lr0.1_leaf31": 0.087,
+    "logreg_C0.1_all": 0.087,
+    "rf_leaf1": 0.0435
+  },
+  "data_source": "REAL:real_depresjon"
+}

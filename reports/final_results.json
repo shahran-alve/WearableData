@@ -1,0 +1,64 @@
+{
+ "depresjon": {
+  "n_participants": 55,
+  "n_positive": 23,
+  "auroc": 0.928,
+  "auprc": 0.9177,
+  "auprc_baseline": 0.4182,
+  "brier": 0.1154,
+  "log_loss": 0.3846,
+  "sensitivity": 0.7391,
+  "specificity": 0.8438,
+  "B": 201,
+  "n_ge": 0,
+  "p_value": 0.00495,
+  "smallest_attainable_p": 0.00495,
+  "null_mean": 0.4896,
+  "null_max": 0.769,
+  "bootstrap_auroc": [
+   0.8514,
+   0.9802
+  ],
+  "threshold_metrics": {
+   "balanced_accuracy": 0.7914,
+   "sensitivity": 0.7391,
+   "specificity": 0.8438,
+   "ppv": 0.7727,
+   "n_true_positives_detected": 17
+  }
+ },
+ "studentlife": {
+  "n_participants": 38,
+  "n_positive": 7,
+  "auroc": 0.6359,
+  "auprc": 0.3762,
+  "auprc_baseline": 0.1842,
+  "brier": 0.1629,
+  "log_loss": 0.815,
+  "sensitivity": 0.1429,
+  "specificity": 0.9355,
+  "B": 57,
+  "n_ge": 9,
+  "p_value": 0.17241,
+  "smallest_attainable_p": 0.01724,
+  "null_mean": 0.4818,
+  "null_max": 0.9078,
+  "bootstrap_auroc": [
+   0.3879,
+   0.8583
+  ],
+  "threshold_metrics": {
+   "balanced_accuracy": 0.5392,
+   "sensitivity": 0.1429,
+   "specificity": 0.9355,
+   "ppv": 0.3333,
+   "n_true_positives_detected": 1
+  }
+ },
+ "depresjon_rank_pooled": {
+  "observed": 0.928,
+  "B": 110,
+  "p_value": 0.00901,
+  "null_mean": 0.5106
+ }
+}

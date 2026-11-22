@@ -1,0 +1,24 @@
+windowing:
+  studentlife: {history_days: 7, stride_days: 1, min_coverage: 0.5, min_valid_days: 4}
+  depresjon:   {history_days: 7, stride_days: 1, min_coverage: 0.7, min_valid_days: 5}
+domains:
+  activity: [activity_total, activity_mean, activity_sd, sedentary_fraction, active_bout_count,
+             activity_entropy, intradaily_variability, interdaily_stability, relative_amplitude]
+  sleep: [sleep_duration, sleep_midpoint, onset_variability, wake_variability, weekend_shift]
+  mobility: [radius_of_gyration, location_entropy, time_at_primary_place, significant_places]
+  phone: [unlock_count, screen_minutes, conversation_count, conversation_minutes]
+  ema: [stress_lag_mean, stress_lag_sd, affect_lag_mean, ema_response_rate, ema_trend]
+  rhythm: [sleep_regularity, activity_regularity, interaction_regularity]
+  quality: [coverage_activity, coverage_sleep, coverage_mobility, coverage_phone, valid_days]
+personalization:
+  transforms: [personal_zscore_expanding, deviation_from_rolling_median, change_from_baseline_period]
+  baseline_period_days: 7
+  min_history_windows: 2
+  causality: strict_past_only
+  hybrid_features: true
+scaling:
+  fit_on: train_participants_only
+  method: robust
+missingness:
+  add_indicators: true
+  imputation_order: [keep_as_feature, participant_train_history_median, train_fold_population_median, reject_window]

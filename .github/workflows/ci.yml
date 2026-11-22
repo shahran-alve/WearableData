@@ -1,0 +1,30 @@
+name: tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-lock.txt
+          pip install -e . --no-deps
+      - name: Lint
+        run: ruff check src tests scripts
+      - name: Types
+        run: mypy src
+      - name: Tests
+        run: python -m pytest tests -q
+        env:
+          WEARABLEDATA_ID_SALT: ci_salt_not_for_real_data
+      - name: Security scan
+        run: python scripts/security_scan.py

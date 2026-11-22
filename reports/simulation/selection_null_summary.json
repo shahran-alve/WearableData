@@ -1,0 +1,65 @@
+{
+  "alpha": 0.05,
+  "delta": 0.0,
+  "rows": [
+    {
+      "K": 1,
+      "n_replicates": 30,
+      "type1_frozen": 0.0667,
+      "type1_frozen_ci": [
+        0.008,
+        0.221
+      ],
+      "null_mean_frozen": 0.4867,
+      "null_p95_frozen": 0.6769,
+      "type1_repeated": 0.0667,
+      "type1_repeated_ci": [
+        0.008,
+        0.221
+      ],
+      "null_mean_repeated": 0.4867,
+      "null_p95_repeated": 0.6769,
+      "p95_shift": 0.0
+    },
+    {
+      "K": 4,
+      "n_replicates": 30,
+      "type1_frozen": 0.1,
+      "type1_frozen_ci": [
+        0.021,
+        0.265
+      ],
+      "null_mean_frozen": 0.4843,
+      "null_p95_frozen": 0.667,
+      "type1_repeated": 0.0333,
+      "type1_repeated_ci": [
+        0.001,
+        0.172
+      ],
+      "null_mean_repeated": 0.5563,
+      "null_p95_repeated": 0.7145,
+      "p95_shift": 0.0475
+    },
+    {
+      "K": 8,
+      "n_replicates": 25,
+      "type1_frozen": 0.24,
+      "type1_frozen_ci": [
+        0.094,
+        0.451
+      ],
+      "null_mean_frozen": 0.4791,
+      "null_p95_frozen": 0.667,
+      "type1_repeated": 0.04,
+      "type1_repeated_ci": [
+        0.001,
+        0.204
+      ],
+      "null_mean_repeated": 0.5573,
+      "null_p95_repeated": 0.7189,
+      "p95_shift": 0.0519
+    }
+  ],
+  "reading": "frozen = permute after choosing a model; repeated = rerun the search inside every permutation. Divergence with K is the selection effect.",
+  "data_source": "SIMULATION"
+}

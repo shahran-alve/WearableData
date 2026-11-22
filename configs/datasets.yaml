@@ -1,0 +1,74 @@
+# Official sources only. Check each dataset's license at download time.
+datasets:
+  studentlife:
+    role: primary
+    official_landing_page: "https://studentlife.cs.dartmouth.edu/"
+    official_dataset_page: "https://studentlife.cs.dartmouth.edu/dataset.html"
+    citation_key: wang2014studentlife
+    access_mode: manual_or_direct   # verify at build time; do NOT auto-scrape
+    expected_participants: 48
+    study_period: "2013-03-27 to 2013-06-01 (Dartmouth spring term)"
+    study_timezone: "America/New_York"
+    expected_streams:
+      - sensing/activity
+      - sensing/audio
+      - sensing/conversation
+      - sensing/dark
+      - sensing/phonelock
+      - sensing/phonecharge
+      - sensing/gps
+      - sensing/wifi_location
+      - EMA/response/Stress
+      - EMA/response/Mood
+      - EMA/response/Sleep
+      - EMA/response/PAM
+      - EMA/response/Social
+      - EMA/response/Exercise
+      - survey/PHQ-9.csv
+      - survey/PerceivedStressScale.csv
+      - survey/panas.csv
+      - survey/LonelinessScale.csv
+      - survey/FlourishingScale.csv
+    label_sources:
+      phq9: {file: "survey/PHQ-9.csv", timing: "pre and post term only", n_waves: 2}
+      ema_stress: {path: "EMA/response/Stress", timing: "repeated, sparse"}
+    known_constraints:
+      - "PHQ-9 exists only as pre/post; a daily/weekly deterioration target is NOT directly available."
+      - "Post-survey response is incomplete; labeled cohort is smaller than 48."
+      - "Cohort is a single CS class; no population generalization claim is admissible."
+    forbidden_release_fields: [gps_lat, gps_lon, exact_timestamp, source_uid, wifi_bssid, audio_raw]
+
+  depresjon:
+    role: secondary
+    official_landing_page: "https://datasets.simula.no/depresjon/"
+    citation_key: garciaceja2018depresjon
+    access_mode: manual_form   # Simula requires accepting terms; agent must stop here
+    expected_participants: 55
+    expected_groups: {condition: 23, control: 32}
+    signal: "per-minute actigraphy activity counts (Actiwatch AW4, right wrist)"
+    label_sources:
+      group: {source: "folder membership condition/ vs control/"}
+      madrs: {file: "scores.csv", fields: [madrs1, madrs2], applies_to: condition_only}
+    known_constraints:
+      - "MADRS is available for the condition group only; control MADRS is absent, not zero."
+      - "5 of 23 condition participants were inpatients; hospitalization confounds activity."
+      - "Recording length varies per participant; no fixed window count."
+    forbidden_release_fields: [exact_timestamp, source_participant_number]
+
+  daic_woz:
+    role: fallback_only
+    official_landing_page: "https://dcapswoz.ict.usc.edu/"
+    access_mode: signed_eula
+    activation_condition: "Only if Depresjon cannot be acquired under available access conditions."
+    scope_change_required: true
+    notes:
+      - "If activated, title/methods/ethics/limitations must be rewritten."
+      - "Raw audio and transcripts must never leave the local environment."
+
+harmonization:
+  enabled_by_default: false
+  shared_feature_space: [activity_daily_total, activity_daily_sd, sedentary_fraction,
+                         intradaily_variability, interdaily_stability, rest_period_activity,
+                         active_bout_count, activity_entropy]
+  label_map_documented: false   # must be set true only after writing docs/label_harmonization.md
+  guard: "Cross-dataset transfer is reported as secondary evidence only."

@@ -1,0 +1,63 @@
+{
+  "workspace": "reports/real_sl_phq9",
+  "n_seeds": 6,
+  "folds": 5,
+  "fixed_pipeline": {
+    "median": 0.712,
+    "iqr": [
+      0.6394,
+      0.7638
+    ],
+    "p5_p95": [
+      0.6244,
+      0.803
+    ],
+    "min": 0.6221,
+    "max": 0.8157,
+    "range": 0.1935,
+    "frac_above_0.70": 0.5,
+    "frac_above_0.80": 0.167,
+    "frac_above_0.90": 0.0
+  },
+  "selection_aware": {
+    "median": 0.7535,
+    "iqr": [
+      0.7316,
+      0.7857
+    ],
+    "p5_p95": [
+      0.7039,
+      0.8099
+    ],
+    "min": 0.6959,
+    "max": 0.8157,
+    "range": 0.1198,
+    "frac_above_0.70": 0.833,
+    "frac_above_0.80": 0.167,
+    "frac_above_0.90": 0.0
+  },
+  "oracle_best_candidate": {
+    "median": 0.7673,
+    "iqr": [
+      0.7316,
+      0.7961
+    ],
+    "p5_p95": [
+      0.7247,
+      0.8214
+    ],
+    "min": 0.7235,
+    "max": 0.8295,
+    "range": 0.106,
+    "frac_above_0.70": 1.0,
+    "frac_above_0.80": 0.167,
+    "frac_above_0.90": 0.0
+  },
+  "selected_model_frequency": {
+    "hgb_lr0.1_leaf31": 0.333,
+    "rf_leaf5": 0.333,
+    "rf_leaf1": 0.333
+  },
+  "reading": "the spread across seeds is partition variability under an otherwise identical procedure; the selection-aware column adds the variability contributed by choosing a winner among candidates",
+  "data_source": "REAL:real_sl_phq9"
+}

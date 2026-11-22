@@ -1,0 +1,28 @@
+# Raw data never enter version control.
+data/raw/**
+data/interim/**
+data/processed/**
+!data/**/.gitkeep
+
+# Workspaces built from the raw data. Only the stored results are committed.
+reports/*/interim/
+reports/*/validation/
+reports/real_nhanes*/
+reports/synthetic_n40/
+reports/bigdata/
+
+# Identifier mappings are local-only.
+**/id_mapping*.json
+
+# Secrets
+.env
+*.key
+
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+.DS_Store

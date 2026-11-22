@@ -1,0 +1,300 @@
+{
+  "dataset": "depresjon",
+  "official_landing_page": "https://datasets.simula.no/depresjon/",
+  "access_mode": "manual_form",
+  "access_date_utc": "2026-08-09T05:57:27+00:00",
+  "license_text_verbatim": "see the official dataset page",
+  "license_verified_by_human": false,
+  "n_files": 56,
+  "files": [
+    {
+      "path": "data/condition/condition_1.csv",
+      "bytes": 786513,
+      "sha256": "c250aad60d93a194b3df7cc4411c5f0780dc884dcdbdd4e23aee602d363f829e"
+    },
+    {
+      "path": "data/condition/condition_10.csv",
+      "bytes": 737085,
+      "sha256": "486baea5185b7f5406f42b5f2814436db753b4be6785a35af6ee1db38d5a3bca"
+    },
+    {
+      "path": "data/condition/condition_11.csv",
+      "bytes": 774388,
+      "sha256": "fb3c10b87caadd931e1f57ddbed8813ca8edda065647e6cd014062b82ec00e4b"
+    },
+    {
+      "path": "data/condition/condition_12.csv",
+      "bytes": 749937,
+      "sha256": "3cce3230fbeb9099270ff5362258e787bc4803366d06549b60f3d125008070db"
+    },
+    {
+      "path": "data/condition/condition_13.csv",
+      "bytes": 881097,
+      "sha256": "df8391583c712d8d069b9fb6156b76fe99f8fbba3d1b8ed3bfdd319180aea373"
+    },
+    {
+      "path": "data/condition/condition_14.csv",
+      "bytes": 725533,
+      "sha256": "c97fc524e511e17969ababb61256a21dc538b89577cd590a70cf763497aed67e"
+    },
+    {
+      "path": "data/condition/condition_15.csv",
+      "bytes": 736170,
+      "sha256": "7869b64302e52a35ba51b77cc1c8fc68099dcefe8be54a5492c6c6493b1e4962"
+    },
+    {
+      "path": "data/condition/condition_16.csv",
+      "bytes": 1407179,
+      "sha256": "b2e69b2c9142fd6efa6294c87ebb650206f0b494cb8524d0b81fd66411e2e601"
+    },
+    {
+      "path": "data/condition/condition_17.csv",
+      "bytes": 727064,
+      "sha256": "88a52e64f823e7c6d7cd6b1f64d25f29f7b374d8d963438c03f7bc65310cf931"
+    },
+    {
+      "path": "data/condition/condition_18.csv",
+      "bytes": 719197,
+      "sha256": "cdaddf1912c25afdc4cd5a0453133bd26ce2836f65598c492b7b7c42368e5c1d"
+    },
+    {
+      "path": "data/condition/condition_19.csv",
+      "bytes": 719674,
+      "sha256": "e289f8c97764d9c38b21cab1a89cb0cb0b6826b17cd5d834038b0be64bb3ddf9"
+    },
+    {
+      "path": "data/condition/condition_2.csv",
+      "bytes": 1313025,
+      "sha256": "da522c765ce7e138d1e7f196e7066d40974585d9ed20a5d9b5ae23f39a47b8b1"
+    },
+    {
+      "path": "data/condition/condition_20.csv",
+      "bytes": 864060,
+      "sha256": "199083d5152d235d100b721b32e6cf6edbf042b7c18821edcabd3bbf35e88f0d"
+    },
+    {
+      "path": "data/condition/condition_21.csv",
+      "bytes": 685760,
+      "sha256": "1a2b8a44e702987cb621e045229eca0386b68b9c9ba50e22d6eaa2f1290d39e2"
+    },
+    {
+      "path": "data/condition/condition_22.csv",
+      "bytes": 738563,
+      "sha256": "dc91794584c5eb8e9fdfd265ac46a9295313c5326333e71102b037f1ccaa0fe3"
+    },
+    {
+      "path": "data/condition/condition_23.csv",
+      "bytes": 1065828,
+      "sha256": "f359710e507d582e5754c8a8e0d1d34cb2e16209254bf4e4827e22a9bf349796"
+    },
+    {
+      "path": "data/condition/condition_3.csv",
+      "bytes": 738788,
+      "sha256": "73ab8e940e419906c13f4826cdd8afd8f5b8e147d29886a059440761fac1916c"
+    },
+    {
+      "path": "data/condition/condition_4.csv",
+      "bytes": 735121,
+      "sha256": "521f713bcf5dcf475b0ff5c32487ecc4a80ea8068585fdbf511b48b452aed1b9"
+    },
+    {
+      "path": "data/condition/condition_5.csv",
+      "bytes": 729718,
+      "sha256": "b49069fc6a9c3cff031ccd4e9480cbe3ce0d69c9326c3d848a81b61820c5f7fe"
+    },
+    {
+      "path": "data/condition/condition_6.csv",
+      "bytes": 727085,
+      "sha256": "1e0ac144610978214d2c9cbaf1f7f04c0f4094acac245196d5486fac6bae4446"
+    },
+    {
+      "path": "data/condition/condition_7.csv",
+      "bytes": 753516,
+      "sha256": "afa1e9974b5692f01461fe861fc050b9ed4684193c171458bd5cb02cd0719836"
+    },
+    {
+      "path": "data/condition/condition_8.csv",
+      "bytes": 652379,
+      "sha256": "f46c13c17ce4b5304a182e5134de61c989db627f35f22773f1884ea689512950"
+    },
+    {
+      "path": "data/condition/condition_9.csv",
+      "bytes": 690631,
+      "sha256": "00befec9d506817758410ae9d9105ebca5f6484b5d67238d722f5c3c4e53d9e3"
+    },
+    {
+      "path": "data/control/control_1.csv",
+      "bytes": 1725954,
+      "sha256": "b1b1f4e3b197eb14cf25d86694ffc6b5cdc68a3e623ceebddc1690634e597880"
+    },
+    {
+      "path": "data/control/control_10.csv",
+      "bytes": 737711,
+      "sha256": "424ed13b02a065b65b3a20a0fce86fa1c7d8f5aaff361d1bcfe81fc6bfca15bd"
+    },
+    {
+      "path": "data/control/control_11.csv",
+      "bytes": 838119,
+      "sha256": "53f4c28d96f065b5344e5d7bc8512e49c272a2d335c334b7ca1a00f4f2e3decd"
+    },
+    {
+      "path": "data/control/control_12.csv",
+      "bytes": 1162293,
+      "sha256": "607c25b5f4d4882da2e85ad66e6aa4d042072eecbfe1ff2e977f9490ca977f88"
+    },
+    {
+      "path": "data/control/control_13.csv",
+      "bytes": 755553,
+      "sha256": "ec4430e6df3c1249bc9306fc1a5dd0fbe27ee7f8baf997de2a06ffd230b20f54"
+    },
+    {
+      "path": "data/control/control_14.csv",
+      "bytes": 760480,
+      "sha256": "821c9eb396a3f06e3e7407776aff132385c818a12f62e616e60e3ebc11a4e800"
+    },
+    {
+      "path": "data/control/control_15.csv",
+      "bytes": 759535,
+      "sha256": "e54e5fdbd3c21a1907260077ecc63b1d523ab3ef789bb1d1475972c50d36df49"
+    },
+    {
+      "path": "data/control/control_16.csv",
+      "bytes": 835476,
+      "sha256": "f12bf5fa9dfe82eec172414aa1fe33ffa22dc5cdc7d371397cd3e2e4f2bf5c7c"
+    },
+    {
+      "path": "data/control/control_17.csv",
+      "bytes": 978404,
+      "sha256": "3ee0cff5c8ff3d8ad2b6de47cc701da76ada9d7d0b8204f88ebba92ff2a7a9b0"
+    },
+    {
+      "path": "data/control/control_18.csv",
+      "bytes": 838380,
+      "sha256": "722c5bd5f3c1fa12ff34a93e2e5dad03ef7659a843fa20d15bfea98dd6b2e0e4"
+    },
+    {
+      "path": "data/control/control_19.csv",
+      "bytes": 933885,
+      "sha256": "064c75f4d7e24f88a68cc84dd6e5788dba51010778cfba5a7de528f5956a1c42"
+    },
+    {
+      "path": "data/control/control_2.csv",
+      "bytes": 1079823,
+      "sha256": "cf17894cb6c541e3c89dfa114dcc570cb84a6056f43e73253937281ac09129b5"
+    },
+    {
+      "path": "data/control/control_20.csv",
+      "bytes": 1078294,
+      "sha256": "3c9f2ca5a9db0577af1b17f63d31f48dc7d2b77b320307dd38bc2b890707abf2"
+    },
+    {
+      "path": "data/control/control_21.csv",
+      "bytes": 1078749,
+      "sha256": "62ebbe3bda31daff4e7d04d0f05140036b24bd4fb8c99393b2a9993aa890cf1d"
+    },
+    {
+      "path": "data/control/control_22.csv",
+      "bytes": 740735,
+      "sha256": "9d6dcd6ccb00e6f6e45648672b5c718b88b251ab081b058aecafd8a5b9c9cb9d"
+    },
+    {
+      "path": "data/control/control_23.csv",
+      "bytes": 738855,
+      "sha256": "c7e3037b4f0a1fdb5841a60024ec5ed35b30b10212d8b87b1c63e60d32944c39"
+    },
+    {
+      "path": "data/control/control_24.csv",
+      "bytes": 746863,
+      "sha256": "1a6945b17091c100ec3b37e1dcb41f5f0fa22daede55572850ff142d9ea9ff9e"
+    },
+    {
+      "path": "data/control/control_25.csv",
+      "bytes": 745536,
+      "sha256": "c8f78fd79d08c516cffe6e6f060e7dadbe5f09fc2c8765c3bd5f21df01628daa"
+    },
+    {
+      "path": "data/control/control_26.csv",
+      "bytes": 1128639,
+      "sha256": "2986784ef388713861ef6083f94babc94283052840f7baf9f7bd9df1ab4c68e4"
+    },
+    {
+      "path": "data/control/control_27.csv",
+      "bytes": 702932,
+      "sha256": "6587a262a1176afe74ab7008a57f73ada5d7b860a0b1816aef3d46771e5c3316"
+    },
+    {
+      "path": "data/control/control_28.csv",
+      "bytes": 842593,
+      "sha256": "4a3b40f8520552e54685b3e215b144cc270a083b92367e669c730fda2d54b5a0"
+    },
+    {
+      "path": "data/control/control_29.csv",
+      "bytes": 831539,
+      "sha256": "bed80d4aadb2a9a3e0d3ca698704cecab9a2f22c2dd250ab6ee6530b3a9aa637"
+    },
+    {
+      "path": "data/control/control_3.csv",
+      "bytes": 2181803,
+      "sha256": "f122fc9161731ce7dfa84a2527347436b03b61712ba96fff00441d42e65c4e5d"
+    },
+    {
+      "path": "data/control/control_30.csv",
+      "bytes": 738743,
+      "sha256": "bbb90969b90469b464193cf34cdff7469d1ef6aa343f7b62a57babe5480cf968"
+    },
+    {
+      "path": "data/control/control_31.csv",
+      "bytes": 1722296,
+      "sha256": "55bf0b15a920bea4b1a834f3439cad0af635244240490bf4dd6789d51154c161"
+    },
+    {
+      "path": "data/control/control_32.csv",
+      "bytes": 1722802,
+      "sha256": "1c2f1aa7fcd556c75240a18dcea2bad529733a64dcec0a60a72acc2ed318cf9d"
+    },
+    {
+      "path": "data/control/control_4.csv",
+      "bytes": 1058563,
+      "sha256": "9f2f483ba8719ea22bf0abbba0048412caa07a214efdf1a00a635673d26f5ffb"
+    },
+    {
+      "path": "data/control/control_5.csv",
+      "bytes": 1580740,
+      "sha256": "d25d2d37c7a9f8525fe0c0f1cb1b7e43fd668d1f16e7cb36edd39864bd319112"
+    },
+    {
+      "path": "data/control/control_6.csv",
+      "bytes": 1730333,
+      "sha256": "f27fbd665b8aafce9ab9f527b0e3be86e5cc88e45c0410e93c4d1672c5b08c1f"
+    },
+    {
+      "path": "data/control/control_7.csv",
+      "bytes": 1727132,
+      "sha256": "964d4cfc21a361687b3f6c8a3284781abd6db6d7fafcdf9c53349500f7dfd887"
+    },
+    {
+      "path": "data/control/control_8.csv",
+      "bytes": 983991,
+      "sha256": "ccb0ad369dc72a325d786287d42482ef4ac68c4075ce5c0c3b15e32dff4a278f"
+    },
+    {
+      "path": "data/control/control_9.csv",
+      "bytes": 976283,
+      "sha256": "f836ee89397a30b525dce2de7cff6350f81ee1398bba274ef1cbc238bf8d2eff"
+    },
+    {
+      "path": "data/scores.csv",
+      "bytes": 2538,
+      "sha256": "e75049d6df1585fd1d92fbc49a8ac0743c71d30b5b05b425e8120f455018bd88"
+    }
+  ],
+  "known_constraints": [
+    "MADRS is available for the condition group only; control MADRS is absent, not zero.",
+    "5 of 23 condition participants were inpatients; hospitalization confounds activity.",
+    "Recording length varies per participant; no fixed window count."
+  ],
+  "provenance": "USER_SUPPLIED_ARCHIVE",
+  "provenance_note": "Archive supplied by the project author, not downloaded from the official host by this pipeline (the host is unreachable from the build environment: HTTP 403). Hashes below are of the files as received. Provenance against the official release has NOT been independently verified; a human must confirm the source and license before publication.",
+  "official_download_attempted": true,
+  "official_download_result": "HTTP 403 through the build environment's egress proxy"
+}

@@ -1,0 +1,183 @@
+{
+  "alpha": 0.05,
+  "permutations_per_replicate": 99,
+  "design": "participant-level latent effect on 4 of 12 features; participant random intercept SD 1.0; window noise SD 0.6; 8-30 windows per participant",
+  "reading": "at delta = 0 the rejection rate is Type-I error and should be near 0.05; above zero it is power",
+  "rows": [
+    {
+      "n_participants": 20,
+      "delta": 0.0,
+      "learner": "linear",
+      "n_replicates": 40,
+      "truth": "null",
+      "mean_window_auroc": 0.527,
+      "mean_participant_auroc": 0.5341,
+      "window_naive_rate": 0.7,
+      "window_naive_ci": [
+        0.5347,
+        0.8344
+      ],
+      "window_bootstrap_rate": 0.675,
+      "window_bootstrap_ci": [
+        0.5087,
+        0.8143
+      ],
+      "participant_bootstrap_rate": 0.15,
+      "participant_bootstrap_ci": [
+        0.0571,
+        0.2984
+      ],
+      "permutation_rate": 0.1,
+      "permutation_ci": [
+        0.0279,
+        0.2366
+      ]
+    },
+    {
+      "n_participants": 20,
+      "delta": 0.3,
+      "learner": "linear",
+      "n_replicates": 40,
+      "truth": "signal",
+      "mean_window_auroc": 0.5414,
+      "mean_participant_auroc": 0.5565,
+      "window_naive_rate": 0.825,
+      "window_naive_ci": [
+        0.6722,
+        0.9266
+      ],
+      "window_bootstrap_rate": 0.825,
+      "window_bootstrap_ci": [
+        0.6722,
+        0.9266
+      ],
+      "participant_bootstrap_rate": 0.125,
+      "participant_bootstrap_ci": [
+        0.0419,
+        0.268
+      ],
+      "permutation_rate": 0.1,
+      "permutation_ci": [
+        0.0279,
+        0.2366
+      ]
+    },
+    {
+      "n_participants": 20,
+      "delta": 0.6,
+      "learner": "linear",
+      "n_replicates": 40,
+      "truth": "signal",
+      "mean_window_auroc": 0.6267,
+      "mean_participant_auroc": 0.6458,
+      "window_naive_rate": 0.775,
+      "window_naive_ci": [
+        0.6155,
+        0.8916
+      ],
+      "window_bootstrap_rate": 0.775,
+      "window_bootstrap_ci": [
+        0.6155,
+        0.8916
+      ],
+      "participant_bootstrap_rate": 0.375,
+      "participant_bootstrap_ci": [
+        0.2273,
+        0.542
+      ],
+      "permutation_rate": 0.25,
+      "permutation_ci": [
+        0.1269,
+        0.412
+      ]
+    },
+    {
+      "n_participants": 80,
+      "delta": 0.0,
+      "learner": "linear",
+      "n_replicates": 40,
+      "truth": "null",
+      "mean_window_auroc": 0.482,
+      "mean_participant_auroc": 0.4769,
+      "window_naive_rate": 0.8,
+      "window_naive_ci": [
+        0.6435,
+        0.9095
+      ],
+      "window_bootstrap_rate": 0.8,
+      "window_bootstrap_ci": [
+        0.6435,
+        0.9095
+      ],
+      "participant_bootstrap_rate": 0.1,
+      "participant_bootstrap_ci": [
+        0.0279,
+        0.2366
+      ],
+      "permutation_rate": 0.025,
+      "permutation_ci": [
+        0.0006,
+        0.1316
+      ]
+    },
+    {
+      "n_participants": 80,
+      "delta": 0.3,
+      "learner": "linear",
+      "n_replicates": 40,
+      "truth": "signal",
+      "mean_window_auroc": 0.5403,
+      "mean_participant_auroc": 0.5536,
+      "window_naive_rate": 0.775,
+      "window_naive_ci": [
+        0.6155,
+        0.8916
+      ],
+      "window_bootstrap_rate": 0.775,
+      "window_bootstrap_ci": [
+        0.6155,
+        0.8916
+      ],
+      "participant_bootstrap_rate": 0.15,
+      "participant_bootstrap_ci": [
+        0.0571,
+        0.2984
+      ],
+      "permutation_rate": 0.175,
+      "permutation_ci": [
+        0.0734,
+        0.3278
+      ]
+    },
+    {
+      "n_participants": 80,
+      "delta": 0.6,
+      "learner": "linear",
+      "n_replicates": 40,
+      "truth": "signal",
+      "mean_window_auroc": 0.701,
+      "mean_participant_auroc": 0.7361,
+      "window_naive_rate": 0.975,
+      "window_naive_ci": [
+        0.8684,
+        0.9994
+      ],
+      "window_bootstrap_rate": 0.975,
+      "window_bootstrap_ci": [
+        0.8684,
+        0.9994
+      ],
+      "participant_bootstrap_rate": 0.95,
+      "participant_bootstrap_ci": [
+        0.8308,
+        0.9939
+      ],
+      "permutation_rate": 0.925,
+      "permutation_ci": [
+        0.7961,
+        0.9843
+      ]
+    }
+  ],
+  "data_source": "SIMULATION"
+}
